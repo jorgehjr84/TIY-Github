@@ -93,37 +93,35 @@ textarea {
 
 body {
   background-color: white;
-  max-width: 100%;
+  max-width: 460px;
 }
 #container {
+  width: 100%;
   display: block;
 }
 #header {
   position: relative;
   top: 1em;
-  outline: 2px solid black;
 }
 nav {
-  display: inline-block;
-  outline: 2px solid blue;
   position: absolute;
   top: 1em;
   width: 100%;
 }
 nav ul {
-  display: inline-block;
   margin: 0;
   padding: 0;
 }
 nav .tabs li {
+  text-align: center;
+  display: inline-block;
   list-style: none;
-  text-decoration: none;
-  width: 40em;
+  width: 50%;
+  outline: 1px solid lightgrey;
+  float: left;
 }
-li .About {}
-li .Repositories {
-  position: relative;
-  left: 30em;
+a {
+  color: cornflowerblue;
 }
 
 /* ==========================================================================
