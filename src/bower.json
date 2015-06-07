@@ -5,6 +5,7 @@
   "authors": [
     "Jorge Hernandez <jorge_l_hernandez@yahoo.com>"
   ],
+
   "license": "CC0",
   "ignore": [
     "**/.*",
@@ -12,5 +13,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "name": "my_great_project",
+  "dependencies": {
+    "octicons": "*"
+  }
 }
