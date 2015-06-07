@@ -120,6 +120,7 @@ nav .tabs li {
   width: 50%;
   outline: 1px solid lightgrey;
   float: left;
+  height: 2em;
 }
 a {
   color: cornflowerblue;
@@ -152,18 +153,6 @@ li {
 }
 #profile-info .octocat {
   color: darkgrey;
-}
-#profile-info .organization::before {
-  content: '\f037';
-}
-#profile-info .location::before {
-  content: '\f060';
-}
-#profile-info .email::before {
-  content: '\f03b';
-}
-#profile-info .link::before {
-  content: '\f07f';
 }
 #followers-section {
   display: block;
