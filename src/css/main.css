@@ -165,6 +165,49 @@ li {
 #profile-info .link::before {
   content: '\f07f';
 }
+#followers-section {
+  display: block;
+  position: relative;
+  bottom: 5em;
+  height: auto;
+  width: 100%;
+  background-color: rgb(245, 247, 240);
+  outline: 1px solid lightgrey;
+}
+.follow-button {
+  position: relative;
+  width: 100%;
+  background-color: lightgreen;
+  color: white;
+  outline: .25px solid black;
+}
+#count {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+#count div {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  left: 3.6em;
+}
+#categories {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+#categories div {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  left: 5em;
+  color: darkgrey;
+  font-style: normal;
+  font-size: .75em;
+}
 
 /* ==========================================================================
    Helper classes
