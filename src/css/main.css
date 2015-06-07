@@ -120,6 +120,7 @@ nav .tabs li {
   width: 50%;
   outline: 1px solid lightgrey;
   float: left;
+  height: 2em;
 }
 a {
   color: cornflowerblue;
@@ -153,17 +154,48 @@ li {
 #profile-info .octocat {
   color: darkgrey;
 }
-#profile-info .organization::before {
-  content: '\f037';
+#followers-section {
+  display: block;
+  position: relative;
+  bottom: 5em;
+  height: auto;
+  width: 100%;
+  background-color: rgb(245, 247, 240);
+  outline: 1px solid lightgrey;
 }
-#profile-info .location::before {
-  content: '\f060';
+.follow-button {
+  position: relative;
+  width: 100%;
+  background-color: lightgreen;
+  color: white;
+  outline: .25px solid black;
 }
-#profile-info .email::before {
-  content: '\f03b';
+#count {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
 }
-#profile-info .link::before {
-  content: '\f07f';
+#count div {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  left: 3.6em;
+}
+#categories {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+}
+#categories div {
+  position: relative;
+  text-align: center;
+  width: 30%;
+  float: left;
+  left: 5em;
+  color: darkgrey;
+  font-style: normal;
+  font-size: .75em;
 }
 
 /* ==========================================================================
