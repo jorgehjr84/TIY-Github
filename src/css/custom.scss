@@ -15,13 +15,14 @@ nav {
   position: absolute;
   top: 1em;
   width: 100%;
+
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+ul {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
 }
-nav .tabs li {
+.tabs li {
   text-align: center;
   display: inline-block;
   list-style: none;
@@ -29,6 +30,7 @@ nav .tabs li {
   outline: 1px solid lightgrey;
   float: left;
 }
+
 a {
   color: cornflowerblue;
 }
@@ -37,7 +39,7 @@ a {
   height: auto;
   top: 2.5em;
   border-bottom: darkgrey;
-}
+
 img {
   width: 10%;
   height: 10%;
@@ -47,29 +49,28 @@ h3 {
   left: 8em;
   bottom: 7em;
 }
-li {
-  list-style: none;
-  font-size: .75em;
 }
+
 #profile-info {
   padding: 0;
   margin: 0;
   position: relative;
   left: 9em;
   bottom: 8em;
-}
-#profile-info .octocat {
-  color: darkgrey;
-}
-#profile-info .organization::before {
-  content: '\f037';
-}
-#profile-info .location::before {
+
+.octocat {
+    color: darkgrey;
+    }
+.organization::before {
+      content: '\f037';
+    }
+.location::before {
   content: '\f060';
-}
+    }
 #profile-info .email::before {
   content: '\f03b';
 }
-#profile-info .link::before {
+  .link::before {
   content: '\f07f';
+}
 }
