@@ -136,12 +136,12 @@ a {
   background-color: white;
 }
 img {
-  width: 10%;
-  height: 10%;
+  width: 10em;
+  height: 10em;
 }
 h3 {
   position: relative;
-  left: 8em;
+  left: 10em;
   bottom: 7em;
 }
 li {
@@ -158,7 +158,7 @@ li {
   padding: 0;
   margin: 0;
   position: relative;
-  left: 9em;
+  left: 12em;
   bottom: 8em;
 }
 #profile-info .octocat {
