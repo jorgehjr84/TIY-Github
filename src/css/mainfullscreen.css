@@ -92,139 +92,22 @@ textarea {
    ========================================================================== */
 
 body {
+  width: 100%;
   background-color: rgb(245, 247, 240);
   margin: 0;
 }
-#container {
-  width: 100%;
-  display: block;
-}
-#header {
-  position: relative;
-  top: 1em;
-}
-nav {
+.header {
   position: absolute;
-  top: 1em;
-  width: 100%;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-nav .tabs li {
-  text-align: center;
   display: inline-block;
-  list-style: none;
-  width: 50%;
-  outline: 1.5px solid lightgrey;
+}
+#search-bar {}
+.nav-left li {
+  position: relative;
+  outline: 1px solid black;
+}
+.nav-right {
   float: left;
-  height: 2em;
 }
-.tab-current {
-  background-color: white;
-}
-a {
-  color: cornflowerblue;
-}
-#mobile-details {
-  position: relative;
-  height: auto;
-  top: 2.5em;
-  border-bottom: darkgrey;
-  background-color: white;
-}
-img {
-  width: 10%;
-  height: 10%;
-}
-h3 {
-  position: relative;
-  left: 8em;
-  bottom: 7em;
-}
-li {
-  list-style: none;
-  font-size: .75em;
-}
-.organization {
-  cursor: pointer;
-}
-.location {
-  cursor: pointer;
-}
-#profile-info {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  left: 9em;
-  bottom: 8em;
-}
-#profile-info .octocat {
-  color: darkgrey;
-}
-#followers-section {
-  display: block;
-  position: relative;
-  bottom: 5em;
-  height: auto;
-  width: 100%;
-  outline: 1px solid lightgrey;
-  background-color: rgb(245, 247, 240);
-}
-.follow-button {
-  position: relative;
-  width: 100%;
-  background-color: lightgreen;
-  color: white;
-  outline: .25px solid black;
-}
-#count {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-}
-#count div {
-  position: relative;
-  text-align: center;
-  width: 30%;
-  float: left;
-  left: 3.6em;
-}
-#categories {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-}
-#categories div {
-  position: relative;
-  text-align: center;
-  width: 30%;
-  float: left;
-  left: 5em;
-  color: darkgrey;
-  font-style: normal;
-  font-size: .75em;
-}
-.popular-repos {
-  position: relative;
-  bottom: 4em;
-  background-color: white;
-}
-#popular-repos-header {
-  position: relative;
-  left: 2.6em;
-  margin: 0;
-}
-#popular-repos-list li {
-  border: 1px solid lightgrey;
-  height: 2.5em;
-  padding-left: 1em;
-  padding-top: 1em;
-}
-.repo-stars {}
-@media screen and (min-width:1200px) and (max-width:1600px) {}
 
 /* ==========================================================================
    Helper classes
