@@ -2,75 +2,94 @@
 body {
   background-color: white;
   margin: 0;
+  width:100%;
 }
-#container {
+#container{
   width: 100%;
-  display: block;
-}
-#header {
-  position: relative;
-  top: 1em;
-}
-nav {
-  position: absolute;
-  top: 1em;
-  width: 100%;
-
-}
-ul {
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-}
-.tabs li {
-  text-align: center;
   display: inline-block;
-  list-style: none;
-  width: 50%;
-  outline: 1px solid lightgrey;
-  float: left;
 }
-
-a {
-  color: cornflowerblue;
-}
-#mobile-details {
-  position: relative;
-  height: auto;
-  top: 2.5em;
-  border-bottom: darkgrey;
-
-img {
-  width: 10%;
-  height: 10%;
-}
-h3 {
-  position: relative;
-  left: 8em;
-  bottom: 7em;
-}
-}
-
-#profile-info {
-  padding: 0;
+#header{
+  width: 100%;
+  background-color: rgb(240,243,247);
   margin: 0;
-  position: relative;
-  left: 9em;
-  bottom: 8em;
+  height: 2em;
+  span.octicon.octicon-mark-github{
+    font-size: 1.5em;
+    position: relative;
+    left:23.5em;
+    top: .27em;
+  }
+}
 
-.octocat {
-    color: darkgrey;
-    }
-.organization::before {
-      content: '\f037';
-    }
-.location::before {
-  content: '\f060';
-    }
-#profile-info .email::before {
-  content: '\f03b';
-}
-  .link::before {
-  content: '\f07f';
-}
-}
+
+// #container {
+//   width: 100%;
+//   display: block;
+// }
+// #header {
+//   position: relative;
+//   top: 1em;
+// }
+// nav {
+//   position: absolute;
+//   top: 1em;
+//   width: 100%;
+//
+// }
+// ul {
+//     margin: 0;
+//     padding: 0;
+//     cursor: pointer;
+// }
+// .tabs li {
+//   text-align: center;
+//   display: inline-block;
+//   list-style: none;
+//   width: 50%;
+//   outline: 1px solid lightgrey;
+//   float: left;
+// }
+//
+// a {
+//   color: cornflowerblue;
+// }
+// #mobile-details {
+//   position: relative;
+//   height: auto;
+//   top: 2.5em;
+//   border-bottom: darkgrey;
+//
+// img {
+//   width: 10em;
+//   height: 10em;
+// }
+// h3 {
+//   position: relative;
+//   left: 8em;
+//   bottom: 7em;
+// }
+// }
+//
+// #profile-info {
+//   padding: 0;
+//   margin: 0;
+//   position: relative;
+//   left: 9em;
+//   bottom: 8em;
+//
+// .octocat {
+//     color: darkgrey;
+//     }
+// .organization::before {
+//       content: '\f037';
+//     }
+// .location::before {
+//   content: '\f060';
+//     }
+// #profile-info .email::before {
+//   content: '\f03b';
+// }
+//   .link::before {
+//   content: '\f07f';
+// }
+// }
