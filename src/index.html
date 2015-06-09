@@ -77,20 +77,35 @@
 
           <h5>octocat</h5>
 
-          <li class="organization">Github</li>
-          <li class="location">San Francisco</li>
-          <li class="email"><a href "email">octocat@github.com</a></li>
-          <li class="link"><a href "link">http://www.github.com/blog</a></li>
+          <li class="organization">
+            <span class="octicon octicon-organization"></span>
+            Github</li>
+          <li class="location">
+            <span class="octicon octicon-location"></span>
+            San Francisco</li>
+          <li class="email">
+            <span class="octicon octicon-mail"></span>
+            <a href "email">
+            octocat@github.com</a></li>
+          <li class="link">
+            <span class="octicon octicon-link"></span>
+            <a href "link">http://www.github.com/blog</a>
+          </li>
         </ul>
       </div>
-      <button>Follow</button>
-      <button>Unfollow</button>
 
-      <ul>
-        <li>1k Followers</li>
-        <li>2 Starred</li>
-        <li>6 Following</li>
-      </ul>
+      <div id="follow-area">
+        <button class="follow">
+          <span class="octicon octicon-person"></span>
+          Follow</button>
+        <!-- <button>Unfollow</button> -->
+
+        <ul id="stats">
+          <li>1k Followers</li>
+          <li>2 Starred</li>
+          <li>6 Following</li>
+        </ul>
+      </div>
 
       <div>
         <h3 class="popular-repos"></h3>
