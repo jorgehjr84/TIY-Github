@@ -79,17 +79,17 @@
 
           <li class="organization">
             <span class="octicon octicon-organization"></span>
-            Github</li>
+            {{organizations_url}}</li>
           <li class="location">
             <span class="octicon octicon-location"></span>
-            San Francisco</li>
+            {{location}}</li>
           <li class="email">
             <span class="octicon octicon-mail"></span>
             <a href "email">
-            octocat@github.com</a></li>
+            {{email}}</a></li>
           <li class="link">
             <span class="octicon octicon-link"></span>
-            <a href "link">http://www.github.com/blog</a>
+            <a href "link">{{blog}}</a>
           </li>
         </ul>
       </div>
@@ -103,9 +103,9 @@
         <!--stats div -->
         <div id="stats">
           <ul id="stats-numbers">
-            <li>1k</li>
-            <li>2</li>
-            <li>6</li>
+            <li>{{followers}}</li>
+            <li>{{starred_url}}</li>
+            <li>{{following}}</li>
           </ul>
         </div>
         <div id="stats-category">
@@ -162,11 +162,7 @@
   <script src="js/vendor/jquery-1.11.2.min.js "></script>
   <script src="js/vendor/modernizr-2.8.3.min.js "></script>
   <script src="js/main.js "></script>
-  <script>
-    $.getJSON('/api.github/users/octocat.json').then(function(octocat) {
-      console.log(octocat)
-    });
-  </script>
+
 
 </body>
 
