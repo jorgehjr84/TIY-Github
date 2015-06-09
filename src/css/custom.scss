@@ -86,6 +86,7 @@ body {
   #follow-area{
     display: block;
     background-color: rgb(240,243,247);
+    border: 1px solid lightgrey;
     .follow{
       position: relative;
       top:1em;
@@ -97,14 +98,35 @@ body {
     }
     #stats{
       display: inline-block;
-      list-style-type: none;
+      width: 100%;
       padding: none;
-
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+    .stats-numbers{
+      width: 100%;
     }
     li{
+      list-style-type: none;
+      width: 33%;
       float: left;
+      text-align: center;
+      height: 2.5em;
+
+    }
+    .stats{
+      text-align: center;
+      width: 33%;
     }
   }
+   #stats-category{
+     display: inline-block;
+     width: 100%;
+     padding: none;
+     position: relative;
+     bottom: 3.2em;
+     right:
+   }
 
 
 // #container {

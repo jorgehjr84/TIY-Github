@@ -69,7 +69,8 @@ body {
 
 #follow-area {
   display: block;
-  background-color: #f0f3f7; }
+  background-color: #f0f3f7;
+  border: 1px solid lightgrey; }
   #follow-area .follow {
     position: relative;
     top: 1em;
@@ -80,7 +81,25 @@ body {
     color: white; }
   #follow-area #stats {
     display: inline-block;
-    list-style-type: none;
-    padding: none; }
+    width: 100%;
+    padding: none;
+    font-weight: bold;
+    font-size: 1.4em; }
+  #follow-area .stats-numbers {
+    width: 100%; }
   #follow-area li {
-    float: left; }
+    list-style-type: none;
+    width: 33%;
+    float: left;
+    text-align: center;
+    height: 2.5em; }
+  #follow-area .stats {
+    text-align: center;
+    width: 33%; }
+
+#stats-category {
+  display: inline-block;
+  width: 100%;
+  padding: none;
+  position: relative;
+  bottom: 3.2em; }
