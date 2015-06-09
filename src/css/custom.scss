@@ -9,7 +9,7 @@ body {
   display: inline-block;
 }
 #header{
-  width: 100%;  
+  width: 100%;
   background-color: rgb(240,243,247);
   margin: 0;
   height: 2em;
@@ -32,6 +32,7 @@ body {
     list-style-type: none;
     display: inline-block;
     padding: 0;
+    margin: 0;
     li{
       width: 49.8%;
       float: left;
@@ -125,7 +126,6 @@ body {
      padding: none;
      position: relative;
      bottom: 3.2em;
-     right:
    }
 
 

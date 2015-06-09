@@ -116,6 +116,7 @@
           </ul>
         </div>
 
+        <!--Beginnning of popular repos-->
         <div>
           <h3 class="popular-repos"></h3>
           <ul>
@@ -135,116 +136,18 @@
               <a href="pop-repo5">octocat/git-consortium</a>
             </li>
           </ul>
-
-          <ul class="profile-details">
-            <li>
-              <img src="img/octocat.jpeg">
-              <h3>The Octocat</h3>
-              <!--Header for mobile details section-->
-              <ul id="profile-info">
-                <li class="octocat">octocat</li>
-
-                <li class="organization">
-                  <span class="octicon octicon-organization"></span>
-                  Github</li>
-                <li class="location">
-                  <span class="octicon octicon-location"></span>
-                  San Francisco</li>
-                <li class="email">
-                  <a href "email">
-                    <span class="octicon octicon-mail"></span>
-                    octocat@github.com</a>
-                </li>
-                <li class="link">
-                  <a href "link">
-                    <span class="octicon octicon-link"></span>
-                    http://www.github.com/blog</a>
-                </li>
-              </ul>
-
         </div>
+        <!--End of popular repos section-->
+
+
+
+
         <!--End of mobile details section -->
 
         <!--Beginning of followers-section-->
-        <div id="followers-section">
-          <button class="follow-button">
-            <span class="octicon octicon-person"></span>
-            Follow</button>
-
-          <div id="count">
-            <div>
-              <strong class="followers-count">1k</strong>
-            </div>
-            <div>
-              <strong class="starred-count">2</strong>
-            </div>
-
-            <div>
-              <strong class="following-count">6</strong>
-            </div>
-          </div>
-
-          <div id="categories">
-            <div>
-              <strong class="followers-category">Followers</strong>
-            </div>
-            <div>
-              <strong class="starred-category">Starred</strong>
-            </div>
-
-            <div>
-              <strong class="following-category">Following</strong>
-            </div>
-          </div>
-        </div>
-        <!--End of follow bar and followers info-->
-
-
-        <!--Beginnning of popular repos-->
-        <div class="popular-repos">
-          <h4 id="popular-repos-header">Popular Repositories</h4>
-          <ul id="popular-repos-list">
-
-            <div>
-              <li>
-                <span class="octicon octicon-repo"></span>
-                <a href="popular-repo1">octocat/Spoon-Knife</a>
-                <strong class="repo-stars">9,772</stong>
-
-              </li>
-            </div>
-            <li>
-              <span class="octicon octicon-repo"></span>
-              <a href="popular-repo2">octocat/Hello-World</a>
-              <strong class="repo-stars">1,404</stong>
-
-            </li>
-            <li>
-              <span class="octicon octicon-repo"></span>
-              <a href="popular-repo3">octocat/hello-world</a>
-              <strong class="repo-stars">10</stong>
-
-            </li>
-            <li>
-              <span class="octicon octicon-repo"></span>
-              <a href="popular-repo4">octocat/octocat.github.io</a>
-              <strong class="repo-stars">8</stong>
-
-            </li>
-            <li>
-              <span class="octicon octicon-repo"></span>
-              <a href="popular-repo5">octocat/git-consortium</a>
-              <strong class="repo-stars">5</stong>
-
-            </li>
 
 
 
-
-          </ul>
-
-        </div>
-        <!--End of popular repos section-->
 
       </div>
       <!--End of mobile container-->
@@ -259,12 +162,10 @@
   <script src="js/vendor/jquery-1.11.2.min.js "></script>
   <script src="js/vendor/modernizr-2.8.3.min.js "></script>
   <script src="js/main.js "></script>
-  //
   <script>
-    //   $.getJson('/api.github/users/octocat.json').then(function(octocat) {
-    //     console.log(octocat)
-    //   });
-    //
+    $.getJSON('/api.github/users/octocat.json').then(function(octocat) {
+      console.log(octocat)
+    });
   </script>
 
 </body>
