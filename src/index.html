@@ -14,13 +14,42 @@
 </head>
 
 <body>
+  <!--Beginning of mobile container-->
   <div id="container">
-    <!--Beginning of mobile container-->
+
+
     <div id="header">
+      <div>
+        <span class="octicon octicon-mark-github"></span>
+        <span class="octicon octicon-three-bars"></span>
+      </div>
     </div>
     <nav>
       <ul class="tabs">
+        <!-- <li>
+          <a href="Notifications" class="Notifications">
+            <span>Notificatons</span>
+        </li>
 
+        <li>
+          <a href="Dashboard" class="Dashboard">
+            <span>Dashboard</span>
+        </li>
+
+        <li>
+          <a href="Explore" class="Explore">
+            <span>Explore</span>
+        </li>
+
+        <li>
+          <a href="Profile" class="Profile">
+            <span>Profile</span>
+        </li>
+
+        <li>
+          <a href="Sign-Out" class="Sign-Out">
+            <span>Sign-Out</span>
+        </li> -->
 
 
         <li>
@@ -29,32 +58,69 @@
           </a>
         </li>
 
-        <li><a href="Repositories">Repositiories</a></li>
+        <li>
+          <a href="Repositories">
+            <span>Repositiories</span>
+          </a>
+        </li>
 
       </ul>
     </nav>
     <!--End of tabs bar-->
 
     <div id="mobile-details">
-      <img src="img/octocat.jpeg">
-      <h3>The Octocat</h3>
-      <!--Header for mobile details section-->
-      <ul id="profile-info">
-        <li class="octocat">octocat</li>
+      <img id="octocat-img" src="img/octocat.jpeg">
+      <div class="profile-info">
+        <!--Header for mobile details section-->
+        <ul id="profile">
+          <h4>The Octocat</h4>
 
-        <li class="organization">Github</li>
-        <li class="location">San Francisco</li>
-        <li class="email"><a href "email">octocat@github.com</a></li>
-        <li class="link"><a href "link">http://www.github.com/blog</a></li>
+          <h5>octocat</h5>
+
+          <li class="organization">Github</li>
+          <li class="location">San Francisco</li>
+          <li class="email"><a href "email">octocat@github.com</a></li>
+          <li class="link"><a href "link">http://www.github.com/blog</a></li>
+        </ul>
+      </div>
+      <button>Follow</button>
+      <button>Unfollow</button>
+
+      <ul>
+        <li>1k Followers</li>
+        <li>2 Starred</li>
+        <li>6 Following</li>
       </ul>
 
+      <div>
+        <h3 class="popular-repos"></h3>
+        <ul>
+          <li>
+            <a href="pop-repo1">octocat/Spoon-Knife</a>
+          </li>
+          <li>
+            <a href="pop-repo2">octocat/Hello-World</a>
+          </li>
+          <li>
+            <a href="pop-repo3">octocat/hello-world</a>
+          </li>
+          <li>
+            <a href="pop-repo4">octocat/octocat.github.io</a>
+          </li>
+          <li>
+            <a href="pop-repo5">octocat/git-consortium</a>
+          </li>
+        </ul>
+
+
+
+      </div>
+      <!--End of mobile details section -->
     </div>
-    <!--End of mobile details section -->
-  </div>
-  <!--End of mobile container-->
-  <script src="js/vendor/jquery-1.11.2.min.js"></script>
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <script src="js/main.js"></script>
+    <!--End of mobile container-->
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 </body>

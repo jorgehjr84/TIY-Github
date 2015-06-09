@@ -16,10 +16,53 @@ body {
   span.octicon.octicon-mark-github{
     font-size: 1.5em;
     position: relative;
-    left:23.5em;
+    left:49%;
     top: .27em;
   }
+  span.octicon.octicon-three-bars{
+    position: relative;
+    left: 95%;
+  }
 }
+
+.tabs{
+    width: 100%;
+    margin: 0;
+    background-color: rgb(240,243,247);
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    li{
+      width: 50%;
+      float: left;
+      text-align: center;
+      outline: 1px solid lightgrey;
+      height: 1.75em;
+      }
+      span{
+        position: relative;
+        top:.45em;
+      }
+}
+  #octocat-img{
+    width:6em;
+    height: 6em;
+    float: left;
+  }
+  .profile-info{
+    padding-left: 4.5em;
+    h4{
+      text-decoration:none;
+    }
+    h5{
+      text-decoration: none;
+      position: relative;
+      bottom: 1.5em;
+    }
+    #profile{
+      list-style-type: none;
+    }
+  }
 
 
 // #container {
