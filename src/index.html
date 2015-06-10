@@ -124,35 +124,49 @@
         <h4 class="popular-repos-header">Popular Repositories</h4>
         <ul>
           <li>
+            <span class="octicon octicon-repo"></span>
             <a href="pop-repo1">octocat/Spoon-Knife</a>
+            <span class="pop-repo-stats">9,772</span>
+            <span class="octicon octicon-star"></span>
+
           </li>
           <li>
+            <span class="octicon octicon-repo"></span>
             <a href="pop-repo2">octocat/Hello-World</a>
+            <span class="pop-repo-stats">1,404</span>
+            <span class="octicon octicon-star"></span>
+
           </li>
           <li>
+            <span class="octicon octicon-repo"></span>
             <a href="pop-repo3">octocat/hello-world</a>
+            <span class="pop-repo-stats">10</span>
+            <span class="octicon octicon-star"></span>
+
           </li>
           <li>
+            <span class="octicon octicon-repo"></span>
             <a href="pop-repo4">octocat/octocat.github.io</a>
+            <span class="pop-repo-stats">8</span>
+            <span class="octicon octicon-star"></span>
+
+
           </li>
           <li>
+            <span class="octicon octicon-repo"></span>
             <a href="pop-repo5">octocat/git-consortium</a>
+            <span class="pop-repo-stats">5</span>
+            <span class="octicon octicon-star"></span>
+
           </li>
         </ul>
+
       </div>
       <!--End of popular repos section-->
 
 
 
 
-      <!--End of mobile details section -->
-
-      <!--Beginning of followers-section-->
-
-
-
-
-      <!--End of mobile container-->
 
       <script src="js/vendor/jquery-1.11.2.min.js "></script>
 
@@ -161,7 +175,20 @@
 
       <script src="js/vendor/modernizr-2.8.3.min.js "></script>
       <script src="js/main.js "></script>
+      <script>
+        $.getJSON('../api/github/users/octocat.json')
+          .then(function(octocat) {
+            // Where is the URL for the avatar? octocat.avatar_url
+            console.log(octocat.avatar_url);
+            // Where does the URL go in my HTML page?
+            $avatar = $('img#avatar');
+            // What do we do once we have the underpants?
+            $avatar.attr('src', octocat.avatar_url);
+            $('[data-bind="user.login"]').text(octocat.login)
+          });
+      </script>
 
+      </script>
 
 </body>
 
