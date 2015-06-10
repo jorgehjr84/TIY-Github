@@ -1,3 +1,5 @@
-*.css
+*
+!.gitignore
 main.css
+mainfullscreen.css
 normalize.css
