@@ -1,7 +1,8 @@
 body {
   background-color: white;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+  background-color: #f0f3f7; }
 
 #container {
   width: 100%;
@@ -28,7 +29,8 @@ body {
   list-style-type: none;
   display: inline-block;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  height: 2em; }
   .tabs li {
     width: 49.8%;
     float: left;
@@ -51,10 +53,12 @@ body {
 .profile-info {
   padding-left: 6em;
   font-size: .75em;
-  margin: 0; }
+  margin: 0;
+  background-color: white; }
   .profile-info ul {
     margin: 0; }
   .profile-info h4 {
+    margin: 0;
     text-decoration: none; }
   .profile-info h5 {
     text-decoration: none;
@@ -71,7 +75,8 @@ body {
 #follow-area {
   display: block;
   background-color: #f0f3f7;
-  border: 1px solid lightgrey; }
+  border: 1px solid lightgrey;
+  height: 7em; }
   #follow-area .follow {
     position: relative;
     top: 1em;
@@ -104,3 +109,17 @@ body {
   padding: none;
   position: relative;
   bottom: 3.2em; }
+
+#popular-repos {
+  display: block;
+  background-color: white; }
+  #popular-repos .popular-repos-header {
+    position: relative;
+    left: 2.5em;
+    top: 1.2em; }
+  #popular-repos ul {
+    width: 90%; }
+  #popular-repos li {
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    height: 2em; }
