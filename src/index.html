@@ -17,13 +17,16 @@
   <!--Beginning of mobile container-->
 
   <section class="grid">
-    <div class='unit'>col 1</div>
-    <div class='unit'>col 2</div>
-    <div class='unit'>col 3 </div>
-    <div class='unit'>col 4</div>
-    <div class='unit'>col 5</div>
+
+    <div class='unit'>1</div>
+    <div class='unit'>2</div>
+    <div class='unit'>3</div>
+    <div class='unit'>4</div>
+    <div class='unit'>5</div>
   </section>
-  <!--End of .grid -->
+
+
+
 
   <div id="container">
 
@@ -78,111 +81,128 @@
     <!--End of tabs bar-->
 
     <!--Beginning of mobile-details-->
-    <div id="mobile-details">
-      <img id="octocat-img" src=http://lorempixel.com/g/200/200/>
-      <div class="profile-info">
-        <!--Header for mobile details section-->
-        <ul id="profile">
-          <h4 id="name">{{name}}</h4>
 
-          <h5 id="login">{{login}}</h5>
 
-          <li class="organizations">
-            <span class="octicon octicon-organization"></span>
-            {{organizations}}</li>
-          <li class="location">
-            <span class="octicon octicon-location"></span>
-            {{location}}</li>
-          <li class="email">
-            <span class="octicon octicon-mail"></span>
-            <a href "email">
-            </a>
-          </li>
-          <li class="blog">
-            <span class="octicon octicon-link"></span>
-            <a href "blog">{{blog}}</a>
-          </li>
-        </ul>
-      </div>
+    <!--Beginning of column 1 -->
+    <section class="grid">
+      <div class="unit-span-2">
 
-      <div id="follow-area">
-        <button class="follow">
-          <span class="octicon octicon-person"></span>
-          Follow</button>
-        <!-- <button>Unfollow</button> -->
+        <div id="mobile-details">
+          <img id="octocat-img" src=http://lorempixel.com/g/200/200/>
 
-        <!--stats div -->
-        <div id="stats">
-          <ul id="stats-numbers">
-            <li class='followers'></li>
-            <li class='starred'></li>
-            <li class='following'></li>
-          </ul>
+          <div class="profile-info">
+            <!--Header for mobile details section-->
+            <ul id="profile">
+              <h4 id="name">{{name}}</h4>
+
+              <h5 id="login">{{login}}</h5>
+
+              <li class="organizations">
+                <span class="octicon octicon-organization"></span>
+                {{organizations}}</li>
+              <li class="location">
+                <span class="octicon octicon-location"></span>
+                {{location}}</li>
+              <li class="email">
+                <span class="octicon octicon-mail"></span>
+                <a href "email">
+                </a>
+              </li>
+              <li class="blog">
+                <span class="octicon octicon-link"></span>
+                <a href "blog">{{blog}}</a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="follow-area">
+            <button class="follow">
+              <span class="octicon octicon-person"></span>
+              Follow</button>
+            <!-- <button>Unfollow</button> -->
+
+            <!--stats div -->
+            <div id="stats">
+              <ul id="stats-numbers">
+                <li class='followers'></li>
+                <li class='starred'></li>
+                <li class='following'></li>
+              </ul>
+            </div>
+            <div id="stats-category">
+              <ul id="stats-numbers">
+                <li>Followers</li>
+                <li>Starred</li>
+                <li>Following</li>
+              </ul>
+            </div>
+          </div>
+          <!--End of follow area -->
         </div>
-        <div id="stats-category">
-          <ul id="stats-numbers">
-            <li>Followers</li>
-            <li>Starred</li>
-            <li>Following</li>
+      </div>
+      <!--End of Column 1 -->
+
+
+
+
+      <!--Beginning of column 2 -->
+      <div class="unit-span-3">
+        <!--Beginnning of popular repos-->
+        <div id="popular-repos">
+          <h4 class="popular-repos-header">Popular Repositories</h4>
+          <ul>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="pop-repo1">octocat/Spoon-Knife</a>
+              <span class="pop-repo-stats">9,772</span>
+              <span class="octicon octicon-star"></span>
+
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="pop-repo2">octocat/Hello-World</a>
+              <span class="pop-repo-stats">1,404</span>
+              <span class="octicon octicon-star"></span>
+
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="pop-repo3">octocat/hello-world</a>
+              <span class="pop-repo-stats">10</span>
+              <span class="octicon octicon-star"></span>
+
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="pop-repo4">octocat/octocat.github.io</a>
+              <span class="pop-repo-stats">8</span>
+              <span class="octicon octicon-star"></span>
+
+
+            </li>
+            <li>
+              <span class="octicon octicon-repo"></span>
+              <a href="pop-repo5">octocat/git-consortium</a>
+              <span class="pop-repo-stats">5</span>
+              <span class="octicon octicon-star"></span>
+
+            </li>
           </ul>
+
         </div>
+        <!--End of popular repos section-->
       </div>
-      <!--End of follow area -->
-
-
-      <!--Beginnning of popular repos-->
-      <div id="popular-repos">
-        <h4 class="popular-repos-header">Popular Repositories</h4>
-        <ul>
-          <li>
-            <span class="octicon octicon-repo"></span>
-            <a href="pop-repo1">octocat/Spoon-Knife</a>
-            <span class="pop-repo-stats">9,772</span>
-            <span class="octicon octicon-star"></span>
-
-          </li>
-          <li>
-            <span class="octicon octicon-repo"></span>
-            <a href="pop-repo2">octocat/Hello-World</a>
-            <span class="pop-repo-stats">1,404</span>
-            <span class="octicon octicon-star"></span>
-
-          </li>
-          <li>
-            <span class="octicon octicon-repo"></span>
-            <a href="pop-repo3">octocat/hello-world</a>
-            <span class="pop-repo-stats">10</span>
-            <span class="octicon octicon-star"></span>
-
-          </li>
-          <li>
-            <span class="octicon octicon-repo"></span>
-            <a href="pop-repo4">octocat/octocat.github.io</a>
-            <span class="pop-repo-stats">8</span>
-            <span class="octicon octicon-star"></span>
-
-
-          </li>
-          <li>
-            <span class="octicon octicon-repo"></span>
-            <a href="pop-repo5">octocat/git-consortium</a>
-            <span class="pop-repo-stats">5</span>
-            <span class="octicon octicon-star"></span>
-
-          </li>
-        </ul>
-
-      </div>
-      <!--End of popular repos section-->
+    </section>
+    <!--End of Column 2 -->
+    </section>
+    <!--End of .grid -->
 
 
 
+    <script src="js/vendor/jquery-1.11.2.min.js "></script>
 
-
-      <script src="js/vendor/jquery-1.11.2.min.js "></script>
-
-      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-      <script src="js/main.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/main.js"></script>
 
 
 

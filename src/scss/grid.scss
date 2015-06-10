@@ -3,7 +3,7 @@
   @extend .clearfix;
 
   $grid-width:100%;
-  max-width: 90%;
+  max-width: 100%;
 
   width: $grid-width;
   margin: 0 auto;
@@ -18,17 +18,25 @@
     width: ($grid-width/5);
     float: left;
 
-    .unit-span-2{
-      @extend .unit;
-      width: ($grid-width/8) * 2;
-    }
-    .unit-span-4{
-      @extend .unit;
-      width: ($grid-width/8) * 4;
-    }
   }
+  .unit-span-2{
+    @extend .unit;
+    width: ($grid-width/5)*2;
+    background-color: darkgrey;
+    outline: 2px solid black;
+    float: left;
+}
+
+  .unit-span-3{
+    @extend .unit ;
+    width: ($grid-width/5)*3;
+    background-color: darkgrey;
+    outline: 2px solid blue;
 
   }
+
+
+
 
 } //End of the grid
 

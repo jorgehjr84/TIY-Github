@@ -216,16 +216,25 @@ body {
     right: .5em; }
 
 .grid {
-  max-width: 90%;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   background-color: lightgrey;
   outline: 2px solid red; }
-  .grid .unit {
+  .grid .unit, .grid .unit-span-2, .grid .unit-span-3 {
     background-color: grey;
     outline: 2px solid blue;
     width: 20%;
     float: left; }
+  .grid .unit-span-2 {
+    width: 40%;
+    background-color: darkgrey;
+    outline: 2px solid black;
+    float: left; }
+  .grid .unit-span-3 {
+    width: 60%;
+    background-color: darkgrey;
+    outline: 2px solid blue; }
 
 /* .grid{
   $grid-width: 100%;
@@ -252,15 +261,7 @@ body {
 
   }
 
-  .unit-span-2{
-    @extend .unit;
-    width: ($grid-width/8) * 2;
-  }
-  .unit-span-4{
-    @extend .unit;
-    width: ($grid-width/8) * 4;
-  }
-}
+
  */
 /* ==========================================================================
    Helper classes
