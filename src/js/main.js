@@ -1,6 +1,6 @@
 (function(window) {
 
-  $.getJSON('../api/github/users/octocat.json').then(function(octocat) {
+  $.getJSON('/api/github/users/octocat.json').then(function(octocat) {
     // Where is the URL for the avatar? octocat.avatar_url
     // console.log(octocat);
     // Where does the URL go in my HTML page?
@@ -37,6 +37,10 @@
 
     $following = $('.following');
     $following.text(octocat.following);
+
+    //How to replace the place holders with user data using lodash
+    // var nameTpl = _.template($name.text());
+
 
 
   });

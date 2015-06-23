@@ -55,16 +55,26 @@ body {
 
       }
 }
-  #octocat-img{
-    width:6em;
-    height: 6em;
-    float: left;
+
+  #mobile-details{
+    background-color: white;
   }
+
+  #octocat-img{
+    width:13em;
+    height: 13em;
+    position: relative;
+    left: 8em;
+  }
+
   .profile-info{
     padding-left: 6em;
     font-size: .75em;
     margin: 0;
     background-color: white;
+    position: relative;
+    left:1.5em;
+    padding-right: .5em;
     ul{
       margin: 0;
     }
@@ -142,6 +152,7 @@ body {
        position: relative;
        left:2.5em;
        top:1.2em;
+      width: ($grid-width/5)*3;
      }
      ul{
        width: 90%;

@@ -2,8 +2,8 @@
 
   @extend .clearfix;
 
-  $grid-width:100%;
-  max-width: 100%;
+  $grid-width:90%;
+  max-width: 90%;
 
   width: $grid-width;
   margin: 0 auto;
@@ -39,32 +39,3 @@
 
 
 } //End of the grid
-
-
-/* .grid{
-  $grid-width: 100%;
-  max-width: 80%;
-
-
-  @extend .clearfix;
-  width: $grid-width;
-  margin: 0 auto;
-
-
-  background-color: lightgrey;
-  outline: 2px solid red;
-
-
-
-  .unit{
-    background-color: grey;
-    outline: 2px solid blue;
-
-    float: left;
-    width: ($grid-width/8);
-
-
-  }
-
-
- */
